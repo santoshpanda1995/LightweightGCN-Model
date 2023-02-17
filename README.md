@@ -40,6 +40,7 @@ The requirements.txt file contains all the library files needed for the program 
 ```
 
 4) After that we have to load our trained model, you can directly download the pretrained model which I have provided and put it in the colab to import it.
+- [x] LightweightGCN.h5 ( Our pretrained model, trained on our synthetic paired dataset, for 1000 epochs with 32 steps per epoch. Adam Optimizer and L1 loss function has been used.)
 ```
 from tensorflow.keras.models import load_model
 # load model
