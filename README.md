@@ -1,5 +1,5 @@
 # LightweightGCN-Model
-A very fast and lightweight model based on Graph Convolutional Network. It only contains 0.32M parameters, in comparison if we use a UNet of some depth then it will take 1.92M parameters. We have not used any pooling layer for down/up sampling our convolution layers, rather we have used a unique pixelshuffle and inverse pixelshuffle mechanism. Our model is best suitable for real time applications.
+A very fast and lightweight model based on Graph Convolutional Network (GCN) for Low Light Image Enhancement (LLIE). It only contains 0.32M parameters, in comparison if we use a UNet of some depth then it will take 1.92M parameters. We have not used any pooling layer for down/up sampling our convolution layers, rather we have used a unique pixelshuffle and inverse pixelshuffle mechanism. Our model is best suitable for real time applications.
 
 
 <p float="left">
