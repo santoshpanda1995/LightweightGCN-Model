@@ -27,7 +27,7 @@ from tensorflow.keras.models import load_model
 # load model
 Model = load_model(path to the model)
 # summarize model
-Model_Enhancer.summary()
+Model.summary()
 ```
 
 Now our model is loaded in **Model**. , We can test low light images from this model. Some of the low light images on which i have tested my model , I will provide here.
@@ -41,12 +41,13 @@ def test(img,og):
   image_for_test= cv.resize(img,(600,400))
   og= cv.resize(og,(600,400))
   image_for_test= image_for_test[np.newaxis,:, :,:]
-  Prediction = Model_Enhancer.predict(image_for_test)
+  Prediction = Model.predict(image_for_test)
   Prediction = Prediction.reshape(400,600,3)
   Prediction = np.array(Prediction)
-  cv2.imwrite('/content/low.png', img)
-  cv2.imwrite('/content/high.png', Prediction)
-  cv2.imwrite('/content/og.png', og)
+  #Write the Low light image, the predictiona image and groundtruth image
+  cv2.imwrite('root path', img)
+  cv2.imwrite('root path', Prediction)
+  cv2.imwrite('root path', og)
   original = cv2.imread("/content/low.png")
   compressed = cv2.imread("/content/high.png")
   Hori = np.concatenate((cv.resize(img,(600,400)),cv.resize(og,(600,400)),cv.resize(Prediction,(600,400))), axis=1)
