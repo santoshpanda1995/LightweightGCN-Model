@@ -37,7 +37,7 @@ The requirements.txt file contains all the library files needed for the program 
 !python inversepixelshuffle.py
 ```
 
-4) After that we have to load our trained model.
+4) After that we have to load our trained model, you can directly download the pretrained model which I have provided and put it in the colab to import it.
 ```
 from tensorflow.keras.models import load_model
 # load model
