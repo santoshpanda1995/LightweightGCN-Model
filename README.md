@@ -2,6 +2,10 @@
 A very fast and lightweight model based on Graph Convolutional Network.
 
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+
+
 
 Here I am giving the steps to be followed in Google colab.
 1) To run in colab, first of all clone this repo
