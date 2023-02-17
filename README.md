@@ -1,5 +1,5 @@
 # LightweightGCN-Model
-A very fast and lightweight model based on Graph Convolutional Network.
+A very fast and lightweight model based on Graph Convolutional Network. It only contains 0.32M parameters, in comparison if we use a UNet of some depth then it will take 1.92M parameters.Therefore our model is best suitable for real time applications.
 
 
 <p float="left">
