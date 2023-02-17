@@ -32,12 +32,7 @@ The requirements.txt file contains all the library files needed for the program 
 
 **Note:** There may be some extra or repeated library files present in the requirements file, usually I maintain a single requirement file so sometimes i copy the existing command which may already be there. It will never effect anything to the program.
 
-3) We have used pixelshuffle mechanism and the codes for pixelshuffle and inverse pixelshuffle is present in the pixelshuffle.py and inversepixelshuffle.py respectively.
-
-```
-!python pixelshuffle.py
-!python inversepixelshuffle.py
-```
+3) We have used pixelshuffle and inverse pixelshuffle mechanism for down/upsampling.
 
 4) After that we have to load our trained model, you can directly download the pretrained model which I have provided and put it in the colab to import it.
 - [x] LightweightGCN.h5 ( Our pretrained model, trained on our synthetic paired dataset, for 1000 epochs with 32 steps per epoch. Adam Optimizer and L1 loss function has been used.)
